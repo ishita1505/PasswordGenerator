@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #3B3B98;
+	background-color: #e950e7;
 	color: #fff;
 	display: flex;
 	font-family: 'Muli', sans-serif;
@@ -30,7 +30,7 @@ input[type=checkbox] {
 }
 
 .container {
-	background-color: #23235B;
+	background-color: #b9189b;
 	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
 	padding: 20px;
 	width: 350px;
@@ -70,7 +70,7 @@ input[type=checkbox] {
 	cursor: pointer;
 	font-size: 16px;
 	padding: 8px 12px;
-	background-color: #3B3B98;
+	background-color: #752390;
 }
 
 .btn-large {
@@ -85,7 +85,7 @@ input[type=checkbox] {
 	margin: 15px 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 00px) {
 	.result-container {
 		font-size: 14px;
 	}
@@ -105,10 +105,10 @@ input[type=checkbox] {
 }
 
 .social-panel {	
-	background-color: #fff;
+	background-color: rgb(203, 165, 203);
 	border-radius: 16px;
-	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
-	border: 5px solid #001F61;
+	box-shadow: 0 16px 31px -17px rgba(97, 0, 95, 0.6);
+	border: 5px solid #610056;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -122,7 +122,7 @@ input[type=checkbox] {
 
 .social-panel button.close-btn {
 	border: 0;
-	color: #97A5CE;
+	color: #af0b60;
 	cursor: pointer;
 	font-size: 20px;
 	position: absolute;
@@ -135,9 +135,9 @@ input[type=checkbox] {
 }
 
 .social-panel p {
-	background-color: #001F61;
+	background-color: #61002a;
 	border-radius: 0 0 10px 10px;
-	color: #fff;
+	color: rgb(223, 215, 215);
 	font-size: 14px;
 	line-height: 18px;
 	padding: 2px 17px 6px;
@@ -161,9 +161,9 @@ input[type=checkbox] {
 
 .social-panel h4 {
 	margin: 20px 0;
-	color: #97A5CE;	
+	color: #090a0d;	
 	font-family: 'Muli';	
-	font-size: 14px;	
+	font-size: 16px;	
 	line-height: 18px;
 	text-transform: uppercase;
 }
@@ -180,9 +180,9 @@ input[type=checkbox] {
 }
 
 .social-panel ul li a {
-	border: 1px solid #DCE1F2;
+	border: 1px solid #060606;
 	border-radius: 50%;
-	color: #001F61;
+	color: #61002a;
 	font-size: 20px;
 	display: flex;
 	justify-content: center;
@@ -199,9 +199,9 @@ input[type=checkbox] {
 
 .floating-btn {
 	border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
+	background-color: #61002a;
+	border: 1px solid #61002a;
+	box-shadow: 0 16px 22px -17px #61002a;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
@@ -215,7 +215,7 @@ input[type=checkbox] {
 
 .floating-btn:hover {
 	background-color: #ffffff;
-	color: #001F61;
+	color: #61002a;
 }
 
 .floating-btn:focus {
@@ -223,9 +223,9 @@ input[type=checkbox] {
 }
 
 .floating-text {
-	background-color: #001F61;
+	background-color: #61002a;
 	border-radius: 10px 10px 0 0;
-	color: #fff;
+	color: rgb(16, 13, 13);
 	font-family: 'Muli';
 	padding: 7px 15px;
 	position: fixed;

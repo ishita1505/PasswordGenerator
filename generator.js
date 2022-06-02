@@ -1,11 +1,11 @@
-const resultEle = document.getElementById('result');
-const lengthEle = document.getElementById('length');
-const lowercaseEle = document.getElementById('lowercase');
-const uppercaseEle = document.getElementById('uppercase');
-const numberEle = document.getElementById('number');
-const symbolsEle = document.getElementById('symbols');
-const generateEle = document.getElementById('generate');
-const clipboardEle = document.getElementById('clipboard');
+const resultEl = document.getElementById('result');
+const lengthEl = document.getElementById('length');
+const uppercaseEl = document.getElementById('uppercase');
+const lowercaseEl = document.getElementById('lowercase');
+const numbersEl = document.getElementById('numbers');
+const symbolsEl = document.getElementById('symbols');
+const generateEl = document.getElementById('generate');
+const clipboard = document.getElementById('clipboard');
 
 const randomFunc = {
 	lower: getRandomLower,
@@ -13,20 +13,20 @@ const randomFunc = {
 	number: getRandomNumber,
 	symbol: getRandomSymbol
 }
-Clipboard.addEventListener('click', () =>{
-    const area = document.createElement('textarea');
-    const password = resultEle.innerText;
 
-    if(!password) {return;}
-
-    area.value = password;
-    document.body.appendChild(area);
-    area.select();
-    document.execCommand('copy');
-    area.remove();
-    alert('Password copied to clipboard');
+clipboard.addEventListener('click', () => {
+	const textarea = document.createElement('textarea');
+	const password = resultEl.innerText;
+	
+	if(!password) { return; }
+	
+	textarea.value = password;
+	document.body.appendChild(textarea);
+	textarea.select();
+	document.execCommand('copy');
+	textarea.remove();
+	alert('Password copied to clipboard');
 });
-
 
 generate.addEventListener('click', () => {
 	const length = +lengthEl.value;
@@ -61,24 +61,27 @@ function generatePassword(lower, upper, number, symbol, length) {
 	return finalPassword;
 }
 
+function getRandomLower() {
+	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
 
-function getRandomLower()
-{
-    return String.fromCharCode(Math.floor(Math.random()*26)+97);
+function getRandomUpper() {
+	return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
-function getRandomUpper()
-{
-    return String.fromCharCode(Math.floor(Math.random()*26)+65);
+
+function getRandomNumber() {
+	return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
-function getRandomNumber()
-{
-    return String.fromCharCode(Math.floor(Math.random()*26)+48);
+
+function getRandomSymbol() {
+	const symbols = '!@#$%^&*(){}[]=<>/,.'
+	return symbols[Math.floor(Math.random() * symbols.length)];
 }
-function getRandomSymbol()
-{
-    const Symbol='!@#$%^&/'
-    return Symbol[(Math.floor(Math.random()*Symbol.length))];
-}
+
+
+
+
+
 
 
 // SOCIAL PANEL JS
